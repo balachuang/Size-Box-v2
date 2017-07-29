@@ -1,0 +1,166 @@
+html {
+	font-size: 62.5%;
+}
+body, nav {
+	font-family: Calibri, Arial, Helvetica, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    /*background-image: url("../images/sky.jpg");
+    background-repeat: repeat-x;*/
+}
+.container {
+	position: absolute;
+	padding: 0px;
+}
+#main-container {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgb(220,220,220);
+}
+#object-container {
+	top: 80px;
+	left: 20px;
+	height: calc(100% - 130px);
+	width: calc(100% - 40px);
+	line-height: calc(100% - 130px);
+    overflow: hidden;
+	background-color: rgba(255,255,255,0.5);
+	padding-left: -50px;
+}
+#object-progress-bar {
+    overflow: hidden;
+	height: 100%;
+}
+#x-axis {
+    background-image: url("../images/grass.jpg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+}
+#object-name-label {
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    overflow: visible;
+}
+.control {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+.object {
+	position: relative;
+	/*height: 100%;*/
+	/*line-height: 100%;*/
+	float: left;
+	margin-right: 20px;
+}
+.object:hover {
+	/*border: 2px solid rgb(200,200,200);*/
+	/*border-radius: 15px 15px 0px 0px;*/
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.15);
+}
+.object-info {
+	display: none;
+}
+.object:hover .object-info{
+	display: block;
+}
+.control {
+	position: relative;
+	top: calc(100% - 64px);
+}
+.object-image.disable {
+    display: none;
+}
+.object-image.active {
+    display: block;
+}
+.object-image.load {
+    display: none;
+}
+.object-image.wait {
+    display: block;
+	width: 64px;
+	height: 64px;
+}
+div.img-prepare {
+    display: none;
+}
+.object-delete, .object-change, .object-left, .object-right {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: none;
+}
+.object-change {
+	left: 10px;
+	top: 10px;
+}
+.object-delete {
+	right: 10px;
+	top: 10px;
+}
+.object-left {
+	left: 10px;
+	top: calc(50% - 5px);
+}
+.object-right {
+	right: 10px;
+	top: calc(50% - 5px);
+}
+.object-name {
+    display: none;
+}
+.object-description {
+    display: none;
+}
+.object-mark {
+    position: absolute;
+    width: 17px;
+    display: none;
+}
+#obj-selector, #cat-selector {
+    position: absolute;
+    z-index: 10;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+span.cat-option, span.obj-option {
+    cursor: pointer;
+}
+.object-name-x {
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    /*display: none;*/
+}
+.object-name-y {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border: 1px solid black;
+    /*display: none;*/
+}
+#network-tester {
+    position: absolute;
+    top: —100px;
+    left: -100px;
+}
